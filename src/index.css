@@ -9,6 +9,8 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  /* background-color: #b3d4fc */
+  background-color: #dddddd
 }
 
 .logo {
@@ -36,18 +38,24 @@ nav {
 }
 
 #nav-mobile li:hover {
-  background-color: #aaaaaa;
+  background-color: rgb(196, 196, 3);;
 }
 
-h3 {
+.banner {
   padding-top: 45px;
   background-color: rgb(242, 242, 129);
   font-family: 'Allan', cursive;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 50px;;
+  /* margin-left: 50px; */
 }
 
-.banner {
-  margin: 0px;
+.content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: sans-serif;
 }
+
+/* .banner {
+  margin: 0px;
+} */

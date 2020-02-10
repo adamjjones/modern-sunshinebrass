@@ -4,9 +4,9 @@ import logo from './images/ssb2015.png'
 class Banner extends Component {
   render() {
     return (
-      <div className="banner">
+      <div>
         <img className="logo" src={logo} alt="" />
-        <h3>Bringing the British-Style Brass
+        <h3 className="banner">Bringing the British-Style Brass
             Band Tradition to Tampa Bay.</h3>
       </div>
     );
