@@ -10,3 +10,44 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.logo {
+  /* display: flex; */
+  /* width: 100%; */
+  /* height: aut; */
+  float: left;
+}
+
+nav {
+  text-align: center;
+  height: auto;
+  background-color: white;
+}
+
+#nav-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin-top: 0px;
+  background-color: black;
+  width: 100%;
+}
+
+#nav-mobile li:hover {
+  background-color: #aaaaaa;
+}
+
+h3 {
+  padding-top: 45px;
+  background-color: rgb(242, 242, 129);
+  font-family: 'Allan', cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;;
+}
+
+.banner {
+  margin: 0px;
+}
