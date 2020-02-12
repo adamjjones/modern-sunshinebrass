@@ -5,7 +5,7 @@ class Banner extends Component {
   render() {
     return (
       <div>
-        <img className="logo" src={logo} alt="" />
+        <img className="logo responsive-img" src={logo} alt="" />
         <h3 className="banner">Bringing the British-Style Brass
             Band Tradition to Tampa Bay.</h3>
       </div>

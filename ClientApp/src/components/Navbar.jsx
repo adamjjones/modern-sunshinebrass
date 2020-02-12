@@ -7,8 +7,8 @@ const navbar = (props) => {
       <div className="nav-wrapper">
         <ul id="nav-mobile" className="right">
           <li><Link to='/HomePage'>Home</Link></li>
-          <li><a href="badges.html">Concerts</a></li>
-          <li><a href="collapsible.html">Christmas CD</a></li>
+          <li><Link to="/Concerts">Concerts</Link></li>
+          <li><Link to="/Christmas">Christmas CD</Link></li>
           <li><a href="collapsible.html">Brass Band CD</a></li>
           <li><Link to='/Rehersals'>Rehersals</Link></li>
           <li><a href="collapsible.html">Members</a></li>

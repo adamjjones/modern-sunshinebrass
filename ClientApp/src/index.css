@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  width: 100%;
   margin: 0;
   min-height: 100%;
   /* background-color: #b3d4fc */
@@ -51,11 +52,19 @@ nav {
 }
 
 .content {
+  margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: sans-serif;
 }
 
-/* .banner {
-  margin: 0px;
-} */
+.chip {
+  font-size: 1.2rem;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(250, 132, 132);
+}
+
+.collection {
+  width: 350px;
+}
