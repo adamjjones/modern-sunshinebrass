@@ -10,7 +10,7 @@ const Concerts = () => {
     })
 
   return (
-    <div>
+    <div className="content">
       <h2 className="center">Our Upcoming Concerts</h2>
       <table className="table">
         <thead>
@@ -28,8 +28,8 @@ const Concerts = () => {
                   <td>{e.date}</td>
                   <td>{e.name}</td>
                   <td>{e.address}</td>
-                  <td><a href={"https://" + e.band_Url}>{e.band_Url}</a></td>
-                  <td><a href={"https://" + e.band_Url}>{e.venue_URL}</a></td>
+                  <td><a href={e.band_Url}>{e.band_Url}</a></td>
+                  <td><a href={e.band_Url}>{e.venue_URL}</a></td>
                 </tr>
               )
             })

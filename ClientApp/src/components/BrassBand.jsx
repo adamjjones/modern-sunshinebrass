@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-const images = ['../../images/b1a.png', '../images/b1b.png', '../images/b2a.png', '../images/b2b.png', '../images/b3a.png', '../images/b3b.png', '../images/b4a.png', '../images/b4b.png']
+const images = ['../images/a2.3.png', '../images/a1.2.png', '../images/a1.3.png', '../images/a2.1.png', '../images/a2.2.png', '../images/a1.1.png']
 
-class Christmas extends Component {
+class BrassBand extends Component {
   render() {
     return (
       <div className="content">
@@ -45,21 +45,20 @@ class Christmas extends Component {
             <p className="legend">Legend 3</p>
           </div>
         </Carousel> */}
-        {/* {setInterval(() => {
-          {
-            images.map(i => {
-              return (
+        {
+          images.map(i => {
+            return (
+              <div className="mapped-imgs">
+                <img className="responsive-img" src={i} />
+              </div>
 
-                <img src={i} />
-
-              )
-            })
-          }
-        }, 500)} */}
+            )
+          })
+        }
       </div>
 
     )
   }
 }
 
-export default Christmas;
+export default BrassBand;

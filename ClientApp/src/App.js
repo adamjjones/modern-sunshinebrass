@@ -6,6 +6,7 @@ import Banner from './components/Banner'
 import HomePage from './components/HomePage'
 import Concerts from './components/Concerts'
 import Christmas from './components/Christmas'
+import BrassBand from './components/BrassBand'
 import Rehersals from './components/Rehersals'
 
 
@@ -23,7 +24,7 @@ class App extends Component {
             <Dropdown.Item className="menu-item" href="/Concerts">Concerts</Dropdown.Item>
             <Dropdown.Item className="menu-item" href="/Christmas">Christmas CD</Dropdown.Item>
             <Dropdown.Item className="menu-item" href="/Rehersals">Rehersals</Dropdown.Item>
-            <Dropdown.Item className="menu-item" href="/BrassBandCD">BrassBandCD</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/BrassBand">BrassBand CD</Dropdown.Item>
             <Dropdown.Item className="menu-item" href="/Members">Members</Dropdown.Item>
             <Dropdown.Item className="menu-item" href="/Photos">Photos</Dropdown.Item>
             <Dropdown.Item className="menu-item" href="/Videos">Videos</Dropdown.Item>
@@ -39,6 +40,7 @@ class App extends Component {
             <Route path="/Concerts" exact component={Concerts} />
             <Route path="/Christmas" exact component={Christmas} />
             <Route path="/Rehersals" exact component={Rehersals} />
+            <Route path="/BrassBand" exact component={BrassBand} />
           </Switch>
         </Router>
       </div>

@@ -11,7 +11,7 @@ const navbar = (props) => {
             <li><Link to='/HomePage'>Home</Link></li>
             <li><Link to="/Concerts">Concerts</Link></li>
             <li><Link to="/Christmas">Christmas CD</Link></li>
-            <li><a href="collapsible.html">Brass Band CD</a></li>
+            <li><Link to="/BrassBand">Brass Band CD</Link></li>
             <li><Link to='/Rehersals'>Rehersals</Link></li>
             <li><a href="collapsible.html">Members</a></li>
             <li><a href="collapsible.html">Photos</a></li>

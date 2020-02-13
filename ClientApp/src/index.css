@@ -96,6 +96,10 @@ td {
   padding: 10px;
 }
 
+.mapped-imgs {
+  margin-bottom: 20px;
+}
+
 @media(min-width:992px){
   .dropdown {
     display: none;
