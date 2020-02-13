@@ -39,7 +39,7 @@ nav {
 }
 
 #nav-mobile li:hover {
-  background-color: rgb(196, 196, 3);;
+  background-color: rgb(196, 196, 3);
 }
 
 .banner {
@@ -67,4 +67,22 @@ nav {
 
 .collection {
   width: 350px;
+}
+
+.table {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+td {
+  border: 1px solid black;
+}
+
+@media(min-width:400px) and (max-width:830px){
+  .logo{
+    width: 100%;
+  }
 }

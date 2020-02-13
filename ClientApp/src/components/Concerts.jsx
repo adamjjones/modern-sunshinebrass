@@ -12,11 +12,30 @@ const Concerts = () => {
   return (
     <div>
       <h2 className="center">Our Upcoming Concerts</h2>
-      {
-        events.map(e => {
-          return <div>{e.name}</div>
-        })
-      }
+      <table className="table">
+        <thead>
+          <tr>
+            <td>Date</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Band URL</td>
+            <td>Venue URL</td>
+          </tr>
+          {
+            events.map(e => {
+              return (
+                <tr>
+                  <td>{e.date}</td>
+                  <td>{e.name}</td>
+                  <td>{e.address}</td>
+                  <td><a href={"https://" + e.band_Url}>{e.band_Url}</a></td>
+                  <td><a href={"https://" + e.band_Url}>{e.venue_URL}</a></td>
+                </tr>
+              )
+            })
+          }
+        </thead>
+      </table>
     </div>
   )
 }
