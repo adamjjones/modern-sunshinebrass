@@ -24,7 +24,7 @@ const Concerts = () => {
           {
             events.map(e => {
               return (
-                <tr>
+                <tr key={e.id}>
                   <td>{e.date}</td>
                   <td>{e.name}</td>
                   <td>{e.address}</td>

@@ -59,10 +59,11 @@ nav {
 }
 
 .chip {
-  font-size: 1.2rem;
-  height: 50px;
+  font-size: 0.91rem;
+  height: 40px;
   padding: 10px;
   background-color: rgb(250, 132, 132);
+  margin-bottom: 20px;
 }
 
 .collection {
@@ -70,8 +71,6 @@ nav {
 }
 
 .table {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -81,8 +80,47 @@ td {
   border: 1px solid black;
 }
 
-@media(min-width:400px) and (max-width:830px){
+.menu {
+  position: absolute;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  float: left;
+  background-color: white;
+  padding: 10px;
+}
+
+.menu-item {
+  padding: 10px;
+}
+
+@media(min-width:992px){
+  .dropdown {
+    display: none;
+  }
+}
+
+@media(min-width:300px) and (max-width:830px){
   .logo{
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  #nav-mobile {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 0px;
+    background-color: black; */
     width: 100%;
   }
 }

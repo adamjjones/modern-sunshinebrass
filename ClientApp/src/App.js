@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Dropdown } from 'react-bootstrap'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import HomePage from './components/HomePage'
@@ -12,7 +13,24 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router><Dropdown className="dropdown">
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Navigation
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu className="menu">
+            <Dropdown.Item className="menu-item" href="/HomePage">Home</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Concerts">Concerts</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Christmas">Christmas CD</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Rehersals">Rehersals</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/BrassBandCD">BrassBandCD</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Members">Members</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Photos">Photos</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Videos">Videos</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/History">History</Dropdown.Item>
+            <Dropdown.Item className="menu-item" href="/Links">Links</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           <Banner />
           <Navbar />
 
