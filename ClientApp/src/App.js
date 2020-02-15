@@ -11,6 +11,7 @@ import Rehersals from './components/Rehersals'
 import Members from './components/Members'
 import History from './components/History'
 import Contact from './components/Contact'
+import Videos from './components/Videos'
 
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
             <Route path="/BrassBand" exact component={BrassBand} />
             <Route path="/Rehersals" exact component={Rehersals} />
             <Route path="/Members" exact component={Members} />
+            <Route path="/Videos" exact component={Videos} />
             <Route path="/History" exact component={History} />
             <Route path="/Contact" exact component={Contact} />
           </Switch>

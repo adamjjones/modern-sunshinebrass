@@ -15,9 +15,9 @@ const navbar = (props) => {
             <li><Link to="/Rehersals">Rehersals</Link></li>
             <li><Link to="/Members">Members</Link></li>
             <li><a href="collapsible.html">Photos</a></li>
-            <li><a href="collapsible.html">Videos</a></li>
-            <li><a href="collapsible.html">History</a></li>
-            <li><Link to="/Contact">History</Link></li>
+            <li><Link to="/Videos">Videos</Link></li>
+            <li><a href="/History">History</a></li>
+            <li><Link to="/Contact">Contact</Link></li>
             <li><a href="collapsible.html">Links</a></li>
           </ul>
         </nav>
