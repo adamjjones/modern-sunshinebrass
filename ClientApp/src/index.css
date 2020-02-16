@@ -123,6 +123,17 @@ td {
   vertical-align: top;
 }
 
+.mapped-videos {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
 @media(min-width:992px){
   .dropdown {
     display: none;

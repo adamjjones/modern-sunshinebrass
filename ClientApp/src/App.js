@@ -12,6 +12,7 @@ import Members from './components/Members'
 import History from './components/History'
 import Contact from './components/Contact'
 import Videos from './components/Videos'
+import Links from './components/Links'
 
 
 class App extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
             <Route path="/Videos" exact component={Videos} />
             <Route path="/History" exact component={History} />
             <Route path="/Contact" exact component={Contact} />
+            <Route path="/Links" exact component={Links} />
           </Switch>
         </Router>
       </div>

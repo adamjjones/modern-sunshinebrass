@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const videos = [
   "https://www.youtube.com/embed/4h9Gng11ztU",
@@ -19,15 +20,13 @@ class Videos extends Component {
         {
           videos.map(v => {
             return (
-              <ul>
+              <div className="mapped-videos video-container">
                 <iframe src={v}></iframe>
-              </ul>
+              </div>
             )
           })
         }
-        <ul>
-
-        </ul>
+        <p className="footer">Please consider buying <Link to="/Christmas">JOY!</Link>, the album on which this piece appears.</p>
       </>
     );
   }

@@ -18,7 +18,7 @@ const navbar = (props) => {
             <li><Link to="/Videos">Videos</Link></li>
             <li><a href="/History">History</a></li>
             <li><Link to="/Contact">Contact</Link></li>
-            <li><a href="collapsible.html">Links</a></li>
+            <li><Link to="/Links">Links</Link></li>
           </ul>
         </nav>
       </div>
