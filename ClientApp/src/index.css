@@ -17,10 +17,12 @@ body {
 .logo {
   /* display: flex; */
   /* width: 100%; */
-  /* height: aut; */
+   /* height: aut;  */
+  /* text-align: center;
+  align-content: center; */
   float: left;
+  /* min-width: 400px;  */
 }
-
 nav {
   text-align: center;
   height: auto;
@@ -48,13 +50,16 @@ nav {
 }
 
 .banner {
-  padding-top: 45px;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
   background-color: rgb(242, 242, 129);
   font-family: 'Allan', cursive;
-  /* font-size: 18pt; */
-  margin-top: 0px;
+  text-align: center;
+  font-size: 24pt;
+  margin-top: -20px;
   margin-bottom: 0px;
-  /* margin-left: 50px; */
+  /* margin-bottom: 0px; */
 }
 
 .content {
@@ -86,22 +91,6 @@ td {
   border: 1px solid black;
 }
 
-.menu {
-  position: absolute;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: black;
-  float: left;
-  background-color: white;
-  padding: 10px;
-}
-
-.menu-item {
-  padding: 10px;
-}
-
 .mapped-imgs {
   margin-bottom: 20px;
 }
@@ -124,10 +113,13 @@ td {
 }
 
 .mapped-videos {
+  /* width: 80%;
   display: flex;
-  justify-content: center;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  justify-content: center; */
+  min-width: 400px;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .footer {
@@ -139,6 +131,26 @@ td {
  justify-content: center;
  /* flex-direction: column; */
 }
+.dropdown {
+  z-index: 10000;
+  display: flex;
+  position: fixed;
+  top: 36px;
+  right: 0px;
+}
+.dropdown-menu {
+  display: flex;
+  min-width: 220px;
+  flex-direction: column;
+  background-color: black;
+  background-color: white;
+  padding: 10px;
+}
+
+.menu-item {
+  padding: 10px;
+}
+
 
 @media(min-width:992px){
   .dropdown {
@@ -146,22 +158,21 @@ td {
   }
 }
 
-#dropdown-basic {
+#dropdown-button {
   background-color: #5050FF;
+  z-index: 10000;
 }
 
 @media(min-width:300px) and (max-width:830px){
-  .logo{
-    text-align: center;
+  #nav-mobile {
     width: 100%;
-
   }
 
   .banner {
     width: 100%;
   }
 
-  #nav-mobile {
+  .logo {
     width: 100%;
   }
 
@@ -172,7 +183,7 @@ td {
     }
 }
 
-#dropdown-basic {
+#dropdown-button {
   position: fixed;
   top: 0px;
   right: 0px;

@@ -32,20 +32,20 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Router><Dropdown className="dropdown">
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            <i className='fa fa-bars'></i>
-          </Dropdown.Toggle>
+        <Router>
+          <Dropdown className="dropdown">
+            <Dropdown.Toggle variant="success" id="dropdown-button">
+              <i className='fa fa-bars'></i>
+            </Dropdown.Toggle>
+            <Dropdown.Menu className="dropdown-menu">
+              {
+                components.map(c => {
+                  return <Dropdown.Item className="dropdown-menu-item" href={c.url}>{c.label}</Dropdown.Item>
 
-          <Dropdown.Menu className="menu">
-            {
-              components.map(c => {
-                return <Dropdown.Item className="menu-item" href={c.url}>{c.label}</Dropdown.Item>
-
-              })
-            }
-          </Dropdown.Menu>
-        </Dropdown>
+                })
+              }
+            </Dropdown.Menu>
+          </Dropdown>
           <Banner />
           {/* <Navbar components={components} /> */}
           <div className="nav-wrapper">
@@ -71,7 +71,7 @@ class App extends Component {
             <Redirect from="/" to="HomePage" />
           </Switch>
         </Router>
-      </div>
+      </div >
     )
   }
 }

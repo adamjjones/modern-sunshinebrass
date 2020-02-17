@@ -6,6 +6,7 @@ class Banner extends Component {
     return (
       <div>
         <img className="logo" src={logo} alt="" />
+        <br />
         <h3 className="banner">Bringing the British-Style Brass
             Band Tradition to Tampa Bay.</h3>
       </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const videoIds = [
   "voxBmYm1r3U",
   "4h9Gng11ztU",
-  "voxBmYm1r3U",
+  // "voxBmYm1r3U",
   "WdDw5FcryW4",
   "2F8L0EsZEf8",
   "6m6v7AQIrGI",
@@ -14,7 +14,7 @@ const videoIds = [
 class Videos extends Component {
   render() {
     return (
-      <>
+      <div>
         {
           videoIds.map(v => {
             return (
@@ -25,7 +25,7 @@ class Videos extends Component {
           })
         }
         <p className="footer">Please consider buying <Link to="/Christmas">JOY!</Link>, the album on which this piece appears.</p>
-      </>
+      </div>
     );
   }
 }
