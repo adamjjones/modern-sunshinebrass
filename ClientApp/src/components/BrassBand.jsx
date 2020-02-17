@@ -13,22 +13,19 @@ class BrassBand extends Component {
         <a href="https://www.etsy.com/shop/SunshineBrass"> our Etsy.com store</a>
           &nbsp; or at any of our Concerts.</p>
 
-        <h3>Joy! - 2010</h3>
+        <h3>Sunshine And Brass - 2004</h3>
         <ul className='collection'>
-          <li className="collection-item">On Christmas Day</li>
-          <li className="collection-item">Fanfare Jubiloso</li>
-          <li className="collection-item">In Dulci Jubilo</li>
-          <li className="collection-item">Still, Still, Still</li>
-          <li className="collection-item">Ding Dong! Merrily On High</li>
-          <li className="collection-item">Jolly Ol' St. Nick</li>
-          <li className="collection-item">Silent Night</li>
-          <li className="collection-item">In the Bleak Midwinter</li>
-          <li className="collection-item">Carol of the Bells</li>
-          <li className="collection-item">The First Noel</li>
-          <li className="collection-item">O Holy Night</li>
-          <li className="collection-item">A Christmas Festival</li>
-          <li className="collection-item">Sleigh Ride</li>
-          <li className="collection-item">Christmas Joy</li>
+          <li className="collection-item">Festival Fanfare and the Star Spangled Banner - Erik Leidzén</li>
+          <li className="collection-item">Amazing Grace - arr. W. Himes</li>
+          <li className="collection-item">March Bravura - W. Himes</li>
+          <li className="collection-item">Chorale and Toccata - Stephen Bulla</li>
+          <li className="collection-item">Shine as the Light - Peter Graham</li>
+          <li className="collection-item">I Vow To Thee, My Country (Thaxted), Gustva Holst, arr. Ray Steadman-Allen</li>
+          <li className="collection-item">Bugler's Holiday - Leroy Andreson </li>
+          <li className="collection-item">The Music Of the Night - Andrew Lloyd Webber, arr. W. Himes    </li>
+          <li className="collection-item">Wishing You Were Somehow Here Again, arr. Stephen Bulla    </li>
+          <li className="collection-item">A Russian Fantasy - Gordon Langford</li>
+          <li className="collection-item">March - Praise, W. Heaton</li>
         </ul>
 
         {

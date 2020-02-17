@@ -134,10 +134,20 @@ td {
   padding-bottom: 50px;
 }
 
+.carousel {
+ display: flex;
+ justify-content: center;
+ /* flex-direction: column; */
+}
+
 @media(min-width:992px){
   .dropdown {
     display: none;
   }
+}
+
+#dropdown-basic {
+  background-color: #5050FF;
 }
 
 @media(min-width:300px) and (max-width:830px){
@@ -160,4 +170,10 @@ td {
     .content{
       margin-top: 20px;
     }
+}
+
+#dropdown-basic {
+  position: fixed;
+  top: 0px;
+  right: 0px;
 }

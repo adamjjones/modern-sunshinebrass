@@ -12,7 +12,7 @@ const navbar = (props) => {
             <li><Link to="/Concerts">Concerts</Link></li>
             <li><Link to="/Christmas">Christmas CD</Link></li>
             <li><Link to="/BrassBand">Brass Band CD</Link></li>
-            <li><Link to="/Rehersals">Rehersals</Link></li>
+            <li><Link to="/Rehearsals">Rehearsals</Link></li>
             <li><Link to="/Members">Members</Link></li>
             <li><a href="collapsible.html">Photos</a></li>
             <li><Link to="/Videos">Videos</Link></li>

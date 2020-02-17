@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-const images = ['../../images/b1a.png', '../images/b1b.png', '../images/b2a.png', '../images/b2b.png', '../images/b3a.png', '../images/b3b.png', '../images/b4a.png', '../images/b4b.png']
+const images = ['../images/b1a.png', '../images/b1b.png', '../images/b2a.png', '../images/b2b.png', '../images/b3a.png', '../images/b3b.png', '../images/b4a.png', '../images/b4b.png']
 
 class Christmas extends Component {
   render() {
@@ -30,34 +31,30 @@ class Christmas extends Component {
           <li className="collection-item">Sleigh Ride</li>
           <li className="collection-item">Christmas Joy</li>
         </ul>
-
-        {/* <Carousel>
-          <div>
-            <img src="assets/1.jpeg" />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div>
-            <img src="assets/2.jpeg" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="assets/3.jpeg" />
-            <p className="legend">Legend 3</p>
-          </div>
-        </Carousel> */}
-        {/* {setInterval(() => {
+        <Carousel interval={3000}
+          centerMode={true}
+          height={400}
+          width={400}
+          autoPlay={true}
+          swipeable={true}
+          showArrows={true}
+          useKeyboardArrows={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          dynamicHeight={true}
+          className="carousel">
           {
             images.map(i => {
               return (
-
-                <img src={i} />
-
+                <div>
+                  <img src={i} />
+                  {/* <p className="legend">Legend 1</p> */}
+                </div>
               )
             })
           }
-        }, 500)} */}
+        </Carousel>
       </div>
-
     )
   }
 }
