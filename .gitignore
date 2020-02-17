@@ -4,6 +4,7 @@
 bin/*
 obj/*
 ClientApp/node_modules/*
+ClientApp/build/*
 /node_modules
 /.pnp
 .pnp.js
