@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "modern-sunshinebrass",
-  "homepage" : "https://sunshinebrass.com", 
+  "homepage": "https://adam.sunshinebrass.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
