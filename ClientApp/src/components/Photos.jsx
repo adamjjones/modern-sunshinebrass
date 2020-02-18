@@ -18,8 +18,8 @@ class Pictures extends Component {
         <Carousel
           interval={3000}
           centerMode={true}
-          height={700}
-          width={750}
+          height="700px"
+          width="750px"
           autoPlay={true}
           swipeable={true}
           showArrows={true}
@@ -30,7 +30,7 @@ class Pictures extends Component {
           className="carousel">
           {photos.map(p => {
             return (
-              <div>
+              <div key={p}>
                 <img src={p} alt='' />
               </div>
             )

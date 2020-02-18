@@ -29,27 +29,18 @@ const components = [
 ]
 
 class App extends Component {
-
-  dropdown = React.createRef();
-  state = {
-    open: false,
-  };
-
   render() {
     return (
       <div>
         <Router>
           <Dropdown className="dropdown">
-            <Dropdown.Toggle variant="success" id="dropdown-button" ref={this.dropdown}>
+            <Dropdown.Toggle variant="success" id="dropdown-button">
               <i className='fa fa-bars'></i>
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu">
-              {
-                components.map(c => {
-                  return <Dropdown.Item className="dropdown-menu-item" key={c.label} href={c.url}>{c.label}</Dropdown.Item>
-
-                })
-              }
+              {components.map(c => {
+                return <Dropdown.Item className="dropdown-menu-item" key={c.label} href={c.url}>{c.label}</Dropdown.Item>
+              })}
             </Dropdown.Menu>
           </Dropdown>
           <Banner />

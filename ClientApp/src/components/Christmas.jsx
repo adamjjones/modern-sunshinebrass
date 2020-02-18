@@ -33,8 +33,8 @@ class Christmas extends Component {
         </ul>
         <Carousel interval={3000}
           centerMode={true}
-          height={400}
-          width={400}
+          height="400px"
+          width="400px"
           autoPlay={true}
           swipeable={true}
           showArrows={true}
@@ -46,7 +46,7 @@ class Christmas extends Component {
           {
             images.map(i => {
               return (
-                <div>
+                <div key={i}>
                   <img src={i} alt='' />
                   {/* <p className="legend">Legend 1</p> */}
                 </div>

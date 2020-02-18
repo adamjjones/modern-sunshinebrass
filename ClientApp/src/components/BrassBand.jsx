@@ -31,7 +31,7 @@ class BrassBand extends Component {
         {
           images.map(i => {
             return (
-              <div className="mapped-imgs">
+              <div key={i} className="mapped-imgs">
                 <img className="responsive-img" src={i} alt='test' />
               </div>
 

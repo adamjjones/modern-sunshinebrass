@@ -18,7 +18,7 @@ class Videos extends Component {
         {
           videoIds.map(v => {
             return (
-              <div className="mapped-videos video-container">
+              <div key={v} className="mapped-videos video-container">
                 <iframe title={`sunshine-video-${v}`} src={`https://www.youtube.com/embed/${v}`}></iframe>
               </div>
             )
