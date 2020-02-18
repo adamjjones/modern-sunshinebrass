@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Fragment, useState } from 'react'
 import { BrowserRouter as Router, Switch, Redirect, Route, Link } from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 import Banner from './components/Banner'
@@ -28,21 +28,41 @@ const components = [
   { url: "/Links", label: "Links", component: Links }
 ]
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Router>
-          <Dropdown className="dropdown">
-            <Dropdown.Toggle variant="success" id="dropdown-button">
-              <i className='fa fa-bars'></i>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className="dropdown-menu">
+const App = (props) => {
+  const [open, setOpen] = useState(false)
+  const openMenu = () => {
+    setOpen(true)
+  }
+  const closeMenu = (e) => {
+    const classes = e.target.classList.value;
+    if (classes.includes("fa-bars") || classes.includes("dropdown"))
+      setOpen(true)
+    else
+      setOpen(false)
+  }
+  return (
+    <div>
+      <Router>
+
+        <Dropdown className="dropdown">
+          <Dropdown.Toggle variant="success" id="dropdown-button" show={open}
+            onClick={openMenu}>
+            <i className='fa fa-bars'></i>
+          </Dropdown.Toggle>
+          {open ?
+            <Dropdown.Menu className="dropdown-menu" show={true}>
               {components.map(c => {
-                return <Dropdown.Item className="dropdown-menu-item" key={c.label} href={c.url}>{c.label}</Dropdown.Item>
+                return <Link className='dropdown-menu-item'
+                  key={c.label} to={c.url} onSelect={closeMenu}>
+                  {c.label}
+                </Link>
               })}
             </Dropdown.Menu>
-          </Dropdown>
+            : <Fragment />
+          }
+        </Dropdown>
+        <div id='bodyDiv' onClick={closeMenu}>
+
           <Banner />
           {/* <Navbar components={components} /> */}
           <div className="nav-wrapper">
@@ -67,10 +87,10 @@ class App extends Component {
             }
             <Redirect from="/" to="HomePage" />
           </Switch>
-        </Router>
-      </div >
-    )
-  }
+        </div>
+      </Router>
+    </div >
+  )
 }
 
 export default App

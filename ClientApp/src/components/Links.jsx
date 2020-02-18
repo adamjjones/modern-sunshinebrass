@@ -5,7 +5,7 @@ class Links extends Component {
     return (
       <div className="content">
         <h2>Links!</h2>
-        <ul class='albumlist' id='links'>
+        <ul className='albumlist' id='links'>
           {/* <li><a href="http://www.brasscast.com">BrassCast.com by Peter Ryan</a></li> */}
           <li><a href="http://www.bandsman.co.uk">BandsMan.co.uk</a></li>
           <li><a href="http://www.brassbandofcentralflorida.org">Brass Band of Central Florida (Orlando)</a></li>
