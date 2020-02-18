@@ -42,7 +42,7 @@ const App = (props) => {
   }
   return (
     <div>
-      <Router>
+      <Router >
 
         <Dropdown className="dropdown">
           <Dropdown.Toggle variant="success" id="dropdown-button" show={open}
@@ -61,10 +61,9 @@ const App = (props) => {
             : <Fragment />
           }
         </Dropdown>
-        <div id='bodyDiv' onClick={closeMenu}>
+        <div onClick={closeMenu}>
 
           <Banner />
-          {/* <Navbar components={components} /> */}
           <div className="nav-wrapper">
 
             <nav className="center">
