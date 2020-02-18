@@ -20,7 +20,7 @@ class HomePage extends Component {
           <p>If you're not familiar with the British-style Brass Band, here is fine example, but with an American March.</p>
 
           <div className="video-container">
-            <iframe width="840" height="472" src="//www.youtube.com/embed/1PvORDOQTsk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe width="840" height="472" title='sunshine-video' src="//www.youtube.com/embed/1PvORDOQTsk" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=""></iframe>
           </div>
 
           <p>The Sunshine Brass Band, Inc. is Artist-in-Residence at Tampa Covenant Church and is a designated 501(c)3 not-for-project organization. Contributions to the band are tax deductible</p>

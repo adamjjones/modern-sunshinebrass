@@ -11,7 +11,7 @@ class Rehearsals extends Component {
         13320 Lake Magdalene Blvd.
         Tampa, FL 33618
       <div className="video-container">
-          <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7042.243535005939!2d-82.3730535!3d28.051306399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c0c0c217af71%3A0x5a88c97ff38a7ad2!2sTampa%20Covenant%20Church!5e0!3m2!1sen!2sus!4v1581458730917!5m2!1sen!2sus" width="600" height="450" frameBorder="0" allowFullScreen=""></iframe>
+          <iframe title='maps' className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7042.243535005939!2d-82.3730535!3d28.051306399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c0c0c217af71%3A0x5a88c97ff38a7ad2!2sTampa%20Covenant%20Church!5e0!3m2!1sen!2sus!4v1581458730917!5m2!1sen!2sus" width="600" height="450" frameBorder="0" allowFullScreen=""></iframe>
         </div>
       </div >
     );

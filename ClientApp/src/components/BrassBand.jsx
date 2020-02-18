@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 
 const images = ['../images/a2.3.png', '../images/a1.2.png', '../images/a1.3.png', '../images/a2.1.png', '../images/a2.2.png', '../images/a1.1.png']
 
@@ -32,7 +32,7 @@ class BrassBand extends Component {
           images.map(i => {
             return (
               <div className="mapped-imgs">
-                <img className="responsive-img" src={i} />
+                <img className="responsive-img" src={i} alt='test' />
               </div>
 
             )

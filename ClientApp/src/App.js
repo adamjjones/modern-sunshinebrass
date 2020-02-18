@@ -46,7 +46,7 @@ class App extends Component {
             <Dropdown.Menu className="dropdown-menu">
               {
                 components.map(c => {
-                  return <Dropdown.Item className="dropdown-menu-item" href={c.url}>{c.label}</Dropdown.Item>
+                  return <Dropdown.Item className="dropdown-menu-item" key={c.label} href={c.url}>{c.label}</Dropdown.Item>
 
                 })
               }
@@ -61,7 +61,7 @@ class App extends Component {
                 {
                   components.map(c => {
                     return (
-                      <li><Link to={c.url}>{c.label}</Link></li>
+                      <li key={c.label}><Link to={c.url}>{c.label}</Link></li>
                     )
                   })
                 }
@@ -71,7 +71,7 @@ class App extends Component {
           <Switch>
             {
               components.map(c => {
-                return <Route path={c.url} exact component={c.component} />
+                return <Route key={c.label} path={c.url} exact component={c.component} />
               })
             }
             <Redirect from="/" to="HomePage" />

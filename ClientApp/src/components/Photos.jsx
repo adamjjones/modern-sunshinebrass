@@ -31,7 +31,7 @@ class Pictures extends Component {
           {photos.map(p => {
             return (
               <div>
-                <img src={p} />
+                <img src={p} alt='' />
               </div>
             )
           })

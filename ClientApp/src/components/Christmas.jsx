@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -47,7 +47,7 @@ class Christmas extends Component {
             images.map(i => {
               return (
                 <div>
-                  <img src={i} />
+                  <img src={i} alt='' />
                   {/* <p className="legend">Legend 1</p> */}
                 </div>
               )
