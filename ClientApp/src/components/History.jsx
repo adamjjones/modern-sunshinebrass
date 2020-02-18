@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 
 class History extends Component {
   render() {
@@ -15,8 +16,7 @@ class History extends Component {
         <p className="bold">Mid 1980s</p>
         <p>
           The Brass Band world revolves around a particular national
-          competition called the
-          <a target="new" href="http://www.nabba.org/">North American Brass
+          competition called the <a href="http://www.nabba.org/">North American Brass
           Band Association</a> (NABBA).  Each year, hundreds of the continent's
           finest brass talent congregates in a different city to compete, listen
           and learn from each other.
@@ -50,7 +50,7 @@ class History extends Component {
 
         <p>
           The band took 2003 off from the competition to record it's first
-          <a href='compactdisk2.php'> Compact Disk</a>.
+          <Link to='/BrassBand'> Compact Disk</Link>.
         </p>
 
         <p>
@@ -60,22 +60,22 @@ class History extends Component {
         </p>
         <p>
           We continued competing in NABBA up until 2010.
-          That year, we recorded <a href='recording1.php'>JOY!</a>.
+          That year, we recorded <Link to='/Christmas'>JOY!</Link>.
           From that album, we also produced
-          <a href='/videos.php'> a music video of Jim's fabulous arrangement of "O Holy Night"</a>,
-          from featuring the band, and his lovely wife, <a href='http://cheynemusic.com/Deanna.html'>Deanna Cheyne</a>.
+          <Link to='/Videos'> a music video of Jim's fabulous arrangement of "O Holy Night"</Link>,
+          from featuring the band, and his lovely wife, Deanna Cheyne.
           JOY contains other stunning examples of Deanna's voice!
         </p>
 
         <p>
           We continue to play many concerts each year. and we
           also are the first to play original compositions and
-          arrangements by our director of twenty years, <a href='http://cheynemusic.com/James.html'>James Cheyne</a>.
+          arrangements by our director of twenty years, James Cheyne.
         </p>
 
         <p>
           Some of this music includes a choir, and some of it also features
-          the outstanding soprano <a href='http://cheynemusic.com/Deanna.html'>Deanna Cheyne</a>
+          the outstanding soprano Deanna Cheyne
         </p>
       </div>
     );

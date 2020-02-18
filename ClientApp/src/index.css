@@ -39,8 +39,8 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 1rem;
-  margin-top: 0px;
+  padding: 0px;
+  margin: 0px;
   background-color: black;
   width: 100%;
 }
@@ -118,8 +118,8 @@ td {
   justify-content: center; */
   min-width: 400px;
   margin-top: 35px;
-  margin-left: 35px;
-  margin-right: 35px;
+  /* margin-left: 35px;
+  margin-right: 35px; */
 }
 
 .footer {
@@ -140,14 +140,18 @@ td {
 }
 .dropdown-menu {
   display: flex;
-  min-width: 220px;
   flex-direction: column;
-  background-color: black;
-  background-color: white;
-  padding: 10px;
+  min-width: 220px;
+  background-color: #5050FF;
+  /* padding: 10px; */
+  margin-right: 0px;
+  /* margin-top: 30px; */
+
 }
 
-.menu-item {
+.dropdown-menu-item {
+  color: white;
+  margin-bottom: 5px;
   padding: 10px;
 }
 
@@ -168,12 +172,19 @@ td {
     width: 100%;
   }
 
+  .content{
+    margin-top: 10px;
+  }
+
   .banner {
     width: 100%;
   }
 
   .logo {
     width: 100%;
+  }
+  .mapped-videos {
+    min-width: 200px;
   }
 
 }
@@ -186,5 +197,5 @@ td {
 #dropdown-button {
   position: fixed;
   top: 0px;
-  right: 0px;
+  left: 0px;
 }

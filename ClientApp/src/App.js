@@ -10,7 +10,7 @@ import Rehearsals from './components/Rehearsals'
 import Members from './components/Members'
 import History from './components/History'
 import Contact from './components/Contact'
-// import Photos from './components/Photos'
+import Photos from './components/Photos'
 import Videos from './components/Videos'
 import Links from './components/Links'
 
@@ -21,7 +21,7 @@ const components = [
   { url: "/Christmas", label: "Christmas CD", component: Christmas },
   { url: "/BrassBand", label: "Brass Band CD", component: BrassBand },
   { url: "/Members", label: "Members", component: Members },
-  // { url: "/Photos", label: "Photos", component: Photos },
+  { url: "/Photos", label: "Photos", component: Photos },
   { url: "/Videos", label: "Videos", component: Videos },
   { url: "/History", label: "History", component: History },
   { url: "/Contact", label: "Contact Us", component: Contact },
@@ -29,12 +29,18 @@ const components = [
 ]
 
 class App extends Component {
+
+  dropdown = React.createRef();
+  state = {
+    open: false,
+  };
+
   render() {
     return (
       <div>
         <Router>
           <Dropdown className="dropdown">
-            <Dropdown.Toggle variant="success" id="dropdown-button">
+            <Dropdown.Toggle variant="success" id="dropdown-button" ref={this.dropdown}>
               <i className='fa fa-bars'></i>
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu">
