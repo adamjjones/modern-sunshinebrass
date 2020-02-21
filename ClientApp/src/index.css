@@ -172,7 +172,11 @@ td {
     width: 100%;
   }
 
-  .content{
+  .banner {
+    padding-bottom: 10px;
+  }
+
+  .content {
     margin-top: 10px;
   }
 
@@ -197,6 +201,12 @@ td {
     .content{
       margin-top: 20px;
     }
+}
+
+@media(min-width:830px) and (max-width:1178px){
+  .banner {
+    padding-bottom: 50px;
+  }
 }
 
 #dropdown-button {
