@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const videoIds = [
   "voxBmYm1r3U",
   "4h9Gng11ztU",
-  // "voxBmYm1r3U",
   "WdDw5FcryW4",
   "2F8L0EsZEf8",
   "6m6v7AQIrGI",
@@ -14,7 +13,8 @@ const videoIds = [
 class Videos extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
+        <p>NOTE: If on a mobile device, click on the title of the video to view in YouTube app.</p>
         {
           videoIds.map(v => {
             return (

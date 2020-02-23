@@ -79,12 +79,14 @@ const App = (props) => {
             </nav>
           </div>
           <Switch>
-            {
-              components.map(c => {
-                return <Route key={c.label} path={c.url} exact component={c.component} />
-              })
-            }
-            <Redirect from="/" to="HomePage" />
+            <div class="maximum-width">
+              {
+                components.map(c => {
+                  return <Route key={c.label} path={c.url} exact component={c.component} />
+                })
+              }
+              <Redirect from="/" to="HomePage" />
+            </div>
           </Switch>
         </div>
       </Router>
