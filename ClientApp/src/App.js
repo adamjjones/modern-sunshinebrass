@@ -85,8 +85,8 @@ const App = (props) => {
                   return <Route key={c.label} path={c.url} exact component={c.component} />
                 })
               }
-              <Redirect from="/" to="HomePage" />
             </div>
+            <Redirect from="/" to="HomePage" />
           </Switch>
         </div>
       </Router>
