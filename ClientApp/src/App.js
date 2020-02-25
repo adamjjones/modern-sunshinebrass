@@ -13,6 +13,7 @@ import Contact from './components/Contact'
 import Photos from './components/Photos'
 import Videos from './components/Videos'
 import Links from './components/Links'
+import AdminAddEvent from './components/AdminAddEvent'
 
 const components = [
   { url: "/HomePage", label: "Home", component: HomePage },
@@ -25,7 +26,8 @@ const components = [
   { url: "/Videos", label: "Videos", component: Videos },
   { url: "/History", label: "History", component: History },
   { url: "/Contact", label: "Contact Us", component: Contact },
-  { url: "/Links", label: "Links", component: Links }
+  { url: "/Links", label: "Links", component: Links },
+  { url: "/AdminAddEvent", label: null, component: AdminAddEvent }
 ]
 
 const App = (props) => {
@@ -40,18 +42,21 @@ const App = (props) => {
     else
       setOpen(false)
   }
+  console.log(props)
   return (
     <div>
       <Router >
 
         <Dropdown className="dropdown">
-          <Dropdown.Toggle variant="success" id="dropdown-button" show={open}
+          <Dropdown.Toggle variant="success" id="dropdown-button" show={"" + open}
             onClick={openMenu}>
             <i className='fa fa-bars'></i>
           </Dropdown.Toggle>
           {open ?
             <Dropdown.Menu className="dropdown-menu" show={true}>
-              {components.map(c => {
+              {components.filter(c => {
+                return c.label
+              }).map(c => {
                 return <Link className='dropdown-menu-item'
                   key={c.label} to={c.url} onSelect={closeMenu}>
                   {c.label}
@@ -69,7 +74,9 @@ const App = (props) => {
             <nav className="center">
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 {
-                  components.map(c => {
+                  components.filter(c => {
+                    return c.label
+                  }).map(c => {
                     return (
                       <li key={c.label}><Link to={c.url}>{c.label}</Link></li>
                     )
@@ -79,13 +86,11 @@ const App = (props) => {
             </nav>
           </div>
           <Switch>
-            <div class="maximum-width">
-              {
-                components.map(c => {
-                  return <Route key={c.label} path={c.url} exact component={c.component} />
-                })
-              }
-            </div>
+            {
+              components.map(c => {
+                return <Route key={c.label} path={c.url} exact component={c.component} />
+              })
+            }
             <Redirect from="/" to="HomePage" />
           </Switch>
         </div>
