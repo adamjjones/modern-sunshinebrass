@@ -27,7 +27,10 @@ const components = [
   { url: "/History", label: "History", component: History },
   { url: "/Contact", label: "Contact Us", component: Contact },
   { url: "/Links", label: "Links", component: Links },
-  { url: "/AdminAddEvent", label: null, component: AdminAddEvent }
+  { url: "/AdminViewEvents", label: null, component: AdminAddEvent },
+  { url: "/AdminAddEvent", label: null, component: AdminAddEvent },
+  { url: "/AdminEditEvent/:id", label: null, component: AdminAddEvent },
+  { url: "/AdminDeleteEvent/:id", label: null, component: AdminAddEvent }
 ]
 
 const App = (props) => {
