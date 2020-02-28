@@ -17,22 +17,28 @@ const AdminAddEvent = (props) => {
     setAddress(event.target.value)
     setBandURL(event.target.value)
     setVenueURL(event.target.value)
-    axios.get('/api/Event', {
+    axios.post('/api/Event', {
       Date: dates,
       Name: name,
       Address: address,
       BandURL: bandURL,
       VenueURL: venueURL
     })
-    console.log(setDates, setName, setAddress, setBandURL, setVenueURL)
+    console.log(event.target) //setDates, setName, setAddress, setBandURL, setVenueURL)
     // console.log('eventData', eventData)
   }
+
+  //   const submitDate = (e) => {
+  //     axios.post('/api/Event', {
+  //       setDates({e.target.value})
+  //   })
+  // }
 
   return (
     <div className="content">
 
       <Formik
-        initialValues={{ email: '', password: '' }}
+        initialValues={{ dates: '', name: '', address: '', bandURL: '', VenueURL: '' }}
         validate={values => {
           const errors = {};
           if (!values.email) {
@@ -44,11 +50,14 @@ const AdminAddEvent = (props) => {
           }
           return errors;
         }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+        onSubmit={(values, ) => {
+          axios.post('api/Event', {
+            Date: dates,
+            Name: name,
+            Address: address,
+            BandURL: bandURL,
+            VenueURL: venueURL
+          })
         }}
       >
         {({
@@ -61,13 +70,14 @@ const AdminAddEvent = (props) => {
           isSubmitting,
           /* and other goodies */
         }) => (
-            <form onSubmit={handleSubmit}>
+            // <form onSubmit={handleSubmit}>
+            <form onSubmit={Formik.handleSubmit}>
               <span className="add-event">
                 Date
             <input
+                  // onSubmit={e => e.target.value}
                   type="date"
                   name="date"
-                  // onMouseOut={submitEvent}
                   onBlur={handleBlur}
                   value={values.date}
                 />
@@ -113,7 +123,7 @@ const AdminAddEvent = (props) => {
               value={values.password}
             /> */}
               {errors.password && touched.password && errors.password}
-              <button type="submit" onClick={submitEvent} disabled={isSubmitting}>
+              <button type="submit" disabled={isSubmitting}>
                 Submit
         </button>
             </form>
