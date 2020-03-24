@@ -3,25 +3,36 @@ import axios from 'axios'
 
 
 const Concerts = () => {
-  const [events, setEvents] = useState([]);
-  axios.get(`/api/Event/`)
-    .then(resp => {
-      setEvents(resp.data)
-    })
+  //   const [events, setEvents] = useState([]);
+  //   axios.get(`/api/Event/`)
+  //     .then(resp => {
+  //       setEvents(resp.data)
+  //     })
 
   return (
-    <div className="content">
-      <h2 className="center">Our Upcoming Concerts</h2>
+    <div className="content center">
+      <h3>Coronavirus Update</h3>
+      <div>
+        Due to the COVID-19 worldwide pandemic,
+        Sunshine Brass has no scheduled concerts at this time.
+        <p />Be safe, be kind, and wash your hands!
+        <p />Please check back as conditions improve.
+      </div>
+      {/* <h2 className="center">Our Upcoming Concerts</h2>
       <table className="table">
         <thead>
           <tr>
-            <td>Date</td>
-            <td>Name</td>
-            <td>Address</td>
+            <td>Event Date</td>
+            <td>Event Time</td>
+            <td>Event Name</td>
+            <td>Event Address</td>
+            <td>Event City</td>
+            <td>Event State</td>
+            <td>Event Zip</td>
             <td>Band URL</td>
             <td>Venue URL</td>
-          </tr>
-          {
+          </tr> */}
+      {/* {
             events.map(e => {
               return (
                 <tr key={e.id}>
@@ -33,10 +44,10 @@ const Concerts = () => {
                 </tr>
               )
             })
-          }
-        </thead>
-      </table>
-    </div>
+          } */}
+      {/* </thead>
+      </table> */}
+    </div >
   )
 }
 

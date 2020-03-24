@@ -14,6 +14,7 @@ import Photos from './components/Photos'
 import Videos from './components/Videos'
 import Links from './components/Links'
 import AdminAddEvent from './components/AdminAddEvent'
+import Footer from './components/Footer'
 
 const components = [
   { url: "/HomePage", label: "Home", component: HomePage },
@@ -98,6 +99,7 @@ const App = (props) => {
           </Switch>
         </div>
       </Router>
+      <Footer />
     </div >
   )
 }
