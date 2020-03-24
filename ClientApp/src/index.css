@@ -59,11 +59,11 @@ nav {
 .banner {
   height: 100%;
   padding-top: 30px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
   background-color: rgb(242, 242, 129);
   font-family: 'Dancing Script', cursive; 
   text-align: center;
-  font-size: 24pt;
+  font-size: 28pt;
   margin-top: -20px;
   margin-bottom: 0px;
 }
@@ -205,7 +205,13 @@ td {
 
 @media(min-width:830px) and (max-width:1178px){
   .banner {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+@media(min-width:1179px) and (max-width: 1222px){
+  .banner {
+    padding-bottom: 40px;
   }
 }
 
@@ -216,7 +222,9 @@ td {
 }
 
 .footer {
+  width: 95%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   padding-top: 20px;
 }
