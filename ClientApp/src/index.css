@@ -69,16 +69,19 @@ nav {
 
 @keyframes fadeout {
   from {
+    word-break: break-all;
     margin-left: 100%;
   }
 
   to {
-    margin-left: 0px;
+    word-break: break-all;
+    margin-left: 2%
+  
   }
 }
 
 .content {
-  animation: fadeout 1s;
+  animation: fadeout 750ms;
   max-width: 95%;
   margin-top: 120px;
   margin-left: 1rem;

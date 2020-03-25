@@ -15,7 +15,7 @@ const photos = ["../images/file3.jpeg",
 class Pictures extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
         <Carousel
           interval={3000}
           centerMode={true}
