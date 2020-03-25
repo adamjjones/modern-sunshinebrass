@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer'
 
 class HomePage extends Component {
   render() {
@@ -25,6 +26,7 @@ class HomePage extends Component {
 
           <p>The Sunshine Brass Band, Inc. is Artist-in-Residence at Tampa Covenant Church and is a designated 501(c)3 not-for-project organization. Contributions to the band are tax deductible</p>
 
+          <Footer />
         </div>
       </>
     );

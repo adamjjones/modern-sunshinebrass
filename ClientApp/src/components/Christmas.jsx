@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Footer from './Footer'
 
 const images = ['../images/b1a.png', '../images/b1b.png', '../images/b2a.png', '../images/b2b.png', '../images/b3a.png', '../images/b3b.png', '../images/b4a.png', '../images/b4b.png']
 
@@ -54,6 +55,7 @@ class Christmas extends Component {
             })
           }
         </Carousel>
+        <Footer />
       </div>
     )
   }

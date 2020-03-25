@@ -99,7 +99,6 @@ const App = (props) => {
           </Switch>
         </div>
       </Router>
-      <Footer />
     </div >
   )
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 const videoIds = [
   "voxBmYm1r3U",
@@ -25,6 +26,7 @@ class Videos extends Component {
           })
         }
         <p className="footer">Please consider buying <Link to="/Christmas">JOY!</Link>, the album on which this piece appears.</p>
+        <Footer />
       </div>
     );
   }

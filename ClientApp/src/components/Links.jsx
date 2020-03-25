@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer'
 
 class Links extends Component {
   render() {
@@ -14,6 +15,7 @@ class Links extends Component {
           <li><a href="http://tampabaysymphony.com">Tampa Bay Symphony</a></li>
           {/* <li><a href="http://sunshinebrass.com.au">Australia's Sunshine Brass Band</a></li> */}
         </ul>
+        <Footer />
       </div>
     );
   }

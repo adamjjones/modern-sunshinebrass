@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Footer from './Footer'
 
 const photos = ["../images/file3.jpeg",
   "../images/file4.jpeg",
@@ -37,6 +38,7 @@ class Pictures extends Component {
           })
           }
         </Carousel>
+        <Footer />
       </div>
     );
   }

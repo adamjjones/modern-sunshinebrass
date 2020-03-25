@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import Footer from './Footer'
 
 
 const Concerts = () => {
@@ -47,6 +47,7 @@ const Concerts = () => {
           } */}
       {/* </thead>
       </table> */}
+      <Footer />
     </div >
   )
 }

@@ -55,7 +55,6 @@ nav {
   animation-duration: 1.5s;
 }
 
-
 .banner {
   height: 100%;
   padding-top: 30px;
@@ -68,7 +67,18 @@ nav {
   margin-bottom: 0px;
 }
 
+@keyframes fadeout {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0px;
+  }
+}
+
 .content {
+  animation: fadeout 1s;
   max-width: 95%;
   margin-top: 120px;
   margin-left: 1rem;

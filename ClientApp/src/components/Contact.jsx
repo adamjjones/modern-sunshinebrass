@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer'
 
 class Contact extends Component {
   render() {
@@ -33,6 +34,7 @@ class Contact extends Component {
             </tr>
           </tbody>
         </table>
+        <Footer />
       </div>
     );
   }

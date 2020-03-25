@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
+import Footer from './Footer'
 
 class History extends Component {
   render() {
@@ -77,6 +78,7 @@ class History extends Component {
           Some of this music includes a choir, and some of it also features
           the outstanding soprano Deanna Cheyne
         </p>
+        <Footer />
       </div>
     );
   }
