@@ -14,7 +14,9 @@ import Photos from './components/Photos'
 import Videos from './components/Videos'
 import Links from './components/Links'
 import AdminAddEvent from './components/AdminAddEvent'
-import Footer from './components/Footer'
+import Menu from './components/Menu'
+import StyledMenu from './components/StyledMenu'
+
 
 const components = [
   { url: "/HomePage", label: "Home", component: HomePage },
@@ -35,9 +37,19 @@ const components = [
 ]
 
 const App = (props) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
+  const [width, setWidth] = useState(0)
   const openMenu = () => {
     setOpen(true)
+  }
+  const handleResize = (event) => {
+    console.log('event', event)
+    console.log('window.innerWidth', window.innerWidth)
+    if (width != window.innerWidth) {
+      console.log("changing the width to ", window.innerWidth)
+      setWidth(window.innerWidth)
+      setOpen(window.innerWidth < 830)
+    }
   }
   const closeMenu = (e) => {
     const classes = e.target.classList.value;
@@ -48,9 +60,11 @@ const App = (props) => {
   }
   console.log(props)
   return (
-    <div>
-      <Router >
+    <div onResize={handleResize}>
+      <Router>
+        <Menu open={open} />
 
+        {/* 
         <Dropdown className="dropdown">
           <Dropdown.Toggle variant="success" id="dropdown-button" show={"" + open}
             onClick={openMenu}>
@@ -69,7 +83,7 @@ const App = (props) => {
             </Dropdown.Menu>
             : <Fragment />
           }
-        </Dropdown>
+        </Dropdown> */}
         <div onClick={closeMenu}>
 
           <Banner />
