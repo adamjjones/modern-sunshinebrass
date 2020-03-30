@@ -36,24 +36,18 @@ const components = [
 
 const App = (props) => {
   const [open, setOpen] = useState(false)
-  const openMenu = () => {
-    setOpen(true)
+  const toggleMenu = () => {
+    setOpen(!open)
   }
   const closeMenu = (e) => {
-    const classes = e.target.classList.value;
-    if (classes.includes("fa-bars") || classes.includes("dropdown"))
-      setOpen(true)
-    else
-      setOpen(false)
+    setOpen(false)
   }
-  console.log(props)
   return (
     <div>
-      <Router >
-
+      <Router>
         <Dropdown className="dropdown">
-          <Dropdown.Toggle variant="success" id="dropdown-button" show={"" + open}
-            onClick={openMenu}>
+          <Dropdown.Toggle variant="success" id="dropdown-button"
+            onClick={toggleMenu}>
             <i className='fa fa-bars'></i>
           </Dropdown.Toggle>
           {open ?
@@ -62,7 +56,8 @@ const App = (props) => {
                 return c.label
               }).map(c => {
                 return <Link className='dropdown-menu-item'
-                  key={c.label} to={c.url} onSelect={closeMenu}>
+                  key={c.label} to={c.url} onClick={closeMenu}
+                  onSelect={closeMenu}>
                   {c.label}
                 </Link>
               })}
