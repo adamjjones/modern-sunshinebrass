@@ -6,9 +6,49 @@ class HomePage extends Component {
     return (
       <>
         <div className="content">
-          {/* <h3>Holiday Break</h3>
-        <p>The Sunshine Brass Band resumes rehearsals on Monday, January 6th at 7 pm at Tampa Covenant Church. We are seeking brass and percussion players to help us grow. For more information, please contact Tim Bailey-Jones or 813-900-8131.</p>
-        <p>Check out our Concert Schedule and come to one of our performances.</p> */}
+          <h2>WE ARE COMING BACK!</h2> 
+          (September 2024 Update)
+          <p>
+          Visit the <a href="https://www.facebook.com/groups/45974493119" target="ssb">Sunshine Brass's  
+          Facebook page for the latest.</a>
+          </p>
+          <p>
+          Our last rehearsal was in March 2020, the very beginning of the COVID pandemic.
+          Aaron Campbell is the driving force behind <a 
+          href="https://www.tampabrassband.com/" target="tbb">Tampa Brass Band</a>,
+          a much newer British-style Brass Band that has found great success
+          at NABBA very early in its history.  There are more local musicians interested 
+          in playing this music than the Tampa Brass Band has openings for, so Aaron is trying
+          to restart the Sunshine Brass Band to satisfy this demand.  
+          </p>
+          <p>
+            We would love to have you join.  You can register your interest by filling out our <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdzEILvltRBXIQ130AfRK8CFc8VEiWsVCPWZIh7q_3lhFSz9Q/viewform">Interest Form.</a>
+          </p>
+          <p>
+            Rehearsals will resume at <a href="https://tampacovenant.org/" target="tcc">Tampa Covenant Church</a> on 
+            Monday evenings, 7:30pm to 9pm, at this address:
+            <p style= {{ "margin-left": "3em" }}>
+              13320 Lake Magdalene Blvd
+              <br/>
+              Tampa, FL 33618
+            </p>
+            <a href="https://maps.app.goo.gl/8JFm7vgvSWd4gQRbA" target="gmaps">Google Maps Link</a>
+          </p>
+          <p>
+            But we don't know WHICH Monday we will start.  Please visit Aaron's Facebook post above for the very latest.
+          </p>
+
+      <cite>
+          NOTE: British-style brass bands are required 
+          to <a href="https://smbrass.com/what-is-a-british-style-brass-band/#:~:text=The%20number%20of%20members%20(instrumentation,marches%2C%20medleys%20and%20hymn%20tune" 
+          target="regulations">have between 28 and 30 players.</a>
+      </cite>
+          
+         
+          
+      
+
 
           <h3>About the Band</h3>
           <p>The Sunshine Brass Band was founded in 1983 and is comprised of all volunteer musicians from the Tampa Bay and central Florida areas. Membership in the band is open to anyone in the area who demonstrates the required musical proficiency and eagerness to participate. The Sunshine Brass Band is a true community band, comprised of adult and youth amateur musicians who come from all walks of life. Members are drawn together by their shared love of brass band music and commitment to pursue musical excellence.</p>
