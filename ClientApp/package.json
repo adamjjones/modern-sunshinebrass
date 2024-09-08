@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "serve": "cd ./build && serve -l tcp://0.0.0.0:8081",
     "predeploy": "react-scripts build",
-    "deploy": "echo 'To setup deployment run: yarn setup-deploy'",
+    "deploy": "gcloud storage rsync  -r build/ gs://sunshinebrass.com",
     "setup-deploy": "app-app --deploy && yarn deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
