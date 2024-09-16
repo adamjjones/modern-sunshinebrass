@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Footer from './Footer'
-import logo from './images/ssblogo2024.jpg'
 
 class HomePage extends Component {
   render() {
@@ -11,7 +10,6 @@ class HomePage extends Component {
           (September 2024 Update)
           <br/>
           <br/>
-          <img className="return2024" src={logo} alt="" />
           <p>
           <img src="/images/ssblogo2024.jpg" />
           <br/>>
