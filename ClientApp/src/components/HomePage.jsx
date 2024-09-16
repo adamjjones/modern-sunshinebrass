@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import Footer from './Footer'
+import logo from './images/ssblogo2024.jpg'
 
 class HomePage extends Component {
   render() {
     return (
       <>
         <div className="content">
-          <h2>WE ARE COMING BACK!</h2> 
+          <h2>WE ARE COMING BACK!  </h2> 
           (September 2024 Update)
+          <br/>
+          <br/>
+          <img className="return2024" src={logo} alt="" />
           <p>
+          <img src="/images/ssblogo2024.jpg" />
+          <br/>>
+          <b>MONDAY, OCTOBER 7 at 7:30pm!</b>
           Visit the <a href="https://www.facebook.com/groups/45974493119" target="ssb">Sunshine Brass's  
           Facebook page for the latest.</a>
           </p>
@@ -36,7 +43,7 @@ class HomePage extends Component {
             <a href="https://maps.app.goo.gl/8JFm7vgvSWd4gQRbA" target="gmaps">Google Maps Link</a>
           </p>
           <p>
-            But we don't know WHICH Monday we will start.  Please visit Aaron's Facebook post above for the very latest.
+            Monday, October 7th!  See you there!
           </p>
 
       <cite>
