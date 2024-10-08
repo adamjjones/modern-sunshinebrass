@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Footer from './Footer'
+import ssblogo from './images/ssblogo2024.jpg'
 
 class HomePage extends Component {
   render() {
@@ -7,13 +8,15 @@ class HomePage extends Component {
       <>
         <div className="content">
           <h2>WE ARE COMING BACK!  </h2> 
-          (September 2024 Update)
+          (October 2024 Update)
           <br/>
-          <br/>
+          <b>MONDAY, OCTOBER 14 at 7:30pm!</b>
+            <br/>
+              <small style={{ 'color': 'gray', 'text-decoration': 'line-through'}}>MONDAY, OCTOBER 7 at 7:30pm!
+              <br/>
+              Yes, we had to cancel because of <a href="https://en.wikipedia.org/wiki/Hurricane_Milton" target="hurricane">Hurricane Milton</a>.
+            </small>
           <p>
-          <img src="/images/ssblogo2024.jpg" />
-          <br/>>
-          <b>MONDAY, OCTOBER 7 at 7:30pm!</b>
           Visit the <a href="https://www.facebook.com/groups/45974493119" target="ssb">Sunshine Brass's  
           Facebook page for the latest.</a>
           </p>
@@ -41,7 +44,7 @@ class HomePage extends Component {
             <a href="https://maps.app.goo.gl/8JFm7vgvSWd4gQRbA" target="gmaps">Google Maps Link</a>
           </p>
           <p>
-            Monday, October 7th!  See you there!
+            Monday, October 14th!  See you there!
           </p>
 
       <cite>
