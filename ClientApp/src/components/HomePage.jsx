@@ -10,11 +10,11 @@ class HomePage extends Component {
           <h2>WE ARE COMING BACK!  </h2> 
           (October 2024 Update)
           <br/>
-          <b>MONDAY, OCTOBER 14 at 7:30pm!</b>
+          <b>MONDAY, OCTOBER 21 at 7:30pm!</b>
             <br/>
               <small style={{ 'color': 'gray', 'text-decoration': 'line-through'}}>MONDAY, OCTOBER 7 at 7:30pm!
               <br/>
-              Yes, we had to cancel because of <a href="https://en.wikipedia.org/wiki/Hurricane_Milton" target="hurricane">Hurricane Milton</a>.
+              Yes, we had to cancel twice because of <a href="https://en.wikipedia.org/wiki/Hurricane_Milton" target="hurricane">Hurricane Milton</a>.
             </small>
           <p>
           Visit the <a href="https://www.facebook.com/groups/45974493119" target="ssb">Sunshine Brass's  
@@ -44,7 +44,7 @@ class HomePage extends Component {
             <a href="https://maps.app.goo.gl/8JFm7vgvSWd4gQRbA" target="gmaps">Google Maps Link</a>
           </p>
           <p>
-            Monday, October 14th!  See you there!
+            Monday, October 21st!  See you there!
           </p>
 
       <cite>
